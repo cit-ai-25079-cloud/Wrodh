@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int size;
+
+    cout << "ادخل حجم المصفوفات: ";
+    cin >> size;
+
+    int arr1[size], arr2[size], sum[size];
+
+    cout << "ادخل عناصر المصفوفة الاولى:\n";
+    for (int i = 0; i < size; i++) {
+        cout << "العنصر " << i + 1 << ": ";
+        cin >> arr1[i];
+    }
+
+    cout << "ادخل عناصر المصفوفة الثانية:\n";
+    for (int i = 0; i < size; i++) {
+        cout << "العنصر " << i + 1 << ": ";
+        cin >> arr2[i];
+    }
+
+    // عملية الجمع
+    for (int i = 0; i < size; i++) {
+        sum[i] = arr1[i] + arr2[i];
+    }
+
+    cout << "الناتج (جمع المصفوفتين):\n";
+    for (int i = 0; i < size; i++) {
+        cout << sum[i] << " ";
+    }
+
+    return 0;
+}
